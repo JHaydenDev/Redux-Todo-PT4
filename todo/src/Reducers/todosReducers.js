@@ -1,9 +1,9 @@
 import {
   NEW_TODO,
   TOGGLE_COMPLETE
- } from '../Actions/index';
+ } from '../actions';
 
- export default (todos = [], action) => {
+export default (todos = [], action) => {
   switch (action.type) {
     case NEW_TODO:
       return todos.concat(action.payload);
@@ -13,4 +13,4 @@ import {
     default:
       return todos;
   }
-}; 
+};

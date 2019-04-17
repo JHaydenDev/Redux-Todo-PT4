@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { addTodo } from './Actions/index';
+import { addTodo } from './actions';
 import TodoList from './components/TodoList';
 
 class App extends Component {
