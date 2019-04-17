@@ -1,3 +1,4 @@
+    
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
@@ -34,23 +35,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1>Joe's stuff he has been procrastinating.</h1>
         <form onSubmit={this.addTodo}>
           <input
-          placeholder="Lets do some stuff!!!"
+          placeholder="new"
           onChange={this.updateNewTodo}  
           value={this.state.newTodo}
           />
         </form>
-        <button onClick={this.addTodo}>Add Todo</button>
         <TodoList todos={this.props.todos} />
       </div>
     );
   }
 }
+
 const mapStateToProps = (state) => {
   return {
     todos: state.todos
   };
 };
+
 export default connect(mapStateToProps, { addTodo })(App);
