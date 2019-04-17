@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { toggleComplete } from '../actions';
+import { toggleComplete } from '../Actions/TodoActions';
 import { connect } from 'react-redux';
 
  class TodoItem extends Component {
